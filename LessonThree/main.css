@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+div, p, a, ul {
+  border: 1px solid #e1e1e1;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.intro {
+  background-color: #EAF7FE; /* Blue */
+}
+
+.name1.name2 {
+  background-color: #FFDAD9; /* Red */
+}
+
+.name1 .name2 {
+  background-color: #FEF9D9; /* Yellow */
+}
+
+#firstname {
+  background-color: #DAFADC; /* Green */
+}
+
+p {
+  background-color: #E6E2FE; /* Purple */
+}
+
+p.intro {
+  font-weight: bold;
+}
+
+div, p {
+  color: #555;
+}
+
+div p {
+  text-decoration: underline;
+}
+
+div > p {
+  font-style: italic;
+}
+
+div + p {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+p ~ ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+[target] {
+  color: #007BFF; /* Blue */
+}
+
+[target="_blank"] {
+  font-weight: 500;
+}
+
+[title~="flower"] {
+  background-color: #FFF5E1; /* Yellow */
+}
+
+[lang|="en"] {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a[href^="https"] {
+  color: #28a745; /* Green */
+}
+
+a[href$=".pdf"] {
+  font-size: 1.2em;
+  background-color: #fff3cd; /* Yellow */
+  border: 1px solid #ffeeba; /* Yellow */
+}
+
+a[href*="w3schools"] {
+  font-weight: bold;
+}
