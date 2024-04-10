@@ -1,18 +1,26 @@
 let form = document.getElementById("form");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+form.addEventListener("submit", (preventError) => {
+  preventError.preventDefault();
 
   // Get all the necessary inputs by their IDs
-  let fullname = document.getElementById("fullname");
-  let password = document.getElementById("password");
-  let experienceInputs = document.querySelectorAll("input[name='experience']");
-  let country = document.getElementById("country");
-  let ai_experience = document.getElementById("ai_experience");
-  let email = document.getElementById("email");
-  let favcolor = document.getElementById("favcolor");
-  let file = document.getElementById("file");
-  let birthday = document.getElementById("birthday");
+let fullname, 
+  password, 
+  experienceInputs, 
+  country, 
+  ai_experience, 
+  email, favcolor, 
+  file, birthday; 
+
+  fullname = document.getElementById("fullname");
+  password = document.getElementById("password");
+  experienceInputs = document.querySelectorAll("input[name='experience']");
+  country = document.getElementById("country");
+  ai_experience = document.getElementById("ai_experience");
+  email = document.getElementById("email");
+  favcolor = document.getElementById("favcolor");
+  file = document.getElementById("file");
+  birthday = document.getElementById("birthday");
 
   // Checking if any of the radio buttons (experience) is selected
   let experienceSelected = Array.from(experienceInputs).some(input => input.checked);
