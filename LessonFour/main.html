@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Four</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <form id="form">
+    <!-- Title -->
+    <h1>Job Application Form</h1>
+    
+    <!-- Full Name Input -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br>
+    
+    <!-- Password Input -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    
+    <!-- Radio Input (Experience) -->
+    <p>Please select your web development experience level:</p>
+    <input type="radio" id="experience_0_1" name="experience" value="0-1 years">
+    <label for="experience_0_1">0-1 Years</label><br>
+    <input type="radio" id="experience_2_5" name="experience" value="2-5 years">
+    <label for="experience_2_5">2-5 Years</label><br>
+    <input type="radio" id="experience_5_plus" name="experience" value="5+ years">
+    <label for="experience_5_plus">5+ Years</label><br>
+    
+    <!-- Checkbox Input (Hobbies) -->
+    <p>Select your hobbies:</p>
+    <input type="checkbox" id="hobby1" name="hobby" value="Biking">
+    <label for="hobby1">Biking</label><br>
+    <input type="checkbox" id="hobby2" name="hobby" value="Reading">
+    <label for="hobby2">Reading</label><br>
+    <input type="checkbox" id="hobby3" name="hobby" value="Travelling">
+    <label for="hobby3">Travelling</label><br>
+    
+    <!-- Dropdown Input (Country) -->
+    <label for="country">Choose a country:</label><br>
+    <select name="country" id="country">
+      <optgroup label="North America">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="mexico">Mexico</option>
+      </optgroup>
+      <optgroup label="Europe">
+        <option value="uk">United Kingdom</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+      </optgroup>
+      <optgroup label="Oceania">
+        <option value="australia">Australia</option>
+        <option value="new_zealand">New Zealand</option>
+      </optgroup>
+    </select><br>
+    
+    <!-- Number Input (AI experience) -->
+    <label for="ai_experience">Experience with AI (in years):</label><br>
+    <input type="number" id="ai_experience" name="ai_experience" min="0" required><br>
+    
+    <!-- Email Input -->
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <!-- Color Input -->
+    <label for="favcolor">Favorite Color:</label><br>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+    
+    <!-- File Input (Resume) -->
+    <label for="file">Upload Resume (PDF):</label><br>
+    <input type="file" id="file" name="file" accept=".pdf" required><br>
+    
+    <!-- Date Input -->
+    <label for="birthday">Enter your birthday:</label><br>
+    <input type="date" id="birthday" name="birthday" required><br><br>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Application">
+    
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
